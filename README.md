@@ -16,7 +16,7 @@ It includes data preprocessing, feature engineering, validation, model training,
 
 1. Clone the repo:
    ```bash
-   git clone <your-repo-url>
+   git clone git@github.com:GaifutdinovDamir/energy_forecast.git
    cd energy_forecast
 
 2.	Install dependencies with Poetry:
