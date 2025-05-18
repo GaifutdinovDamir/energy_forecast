@@ -1,0 +1,12 @@
+{
+    "data_path": "./data/processed_data/AEP_hourly.csv",
+    "artifacts_dir": "artifacts",
+    "train_params": {
+      "iterations": 500,
+      "learning_rate": 0.1,
+      "depth": 6,
+      "loss_function": "RMSE",
+      "verbose": 100,
+      "random_seed": 42
+    }
+  }

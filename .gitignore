@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Poetry
+poetry.lock
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+env/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Data
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Output files
+*.log
+*.csv
+*.parquet
+*.h5
+*.xlsx
+*.pkl
+*.joblib
+
+# OS / Editor stuff
+.DS_Store
+Thumbs.db
+
+# Test cache
+.cache/
+.pytest_cache/
+
+# catboost info 
+catboost_info/
+
+# logs
+logs/
+
+# __init__.py for empty folders (optional, leave it in)
