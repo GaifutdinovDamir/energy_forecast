@@ -23,8 +23,9 @@ dependencies = [
     "torch (>=2.7.0,<3.0.0)",
     "optuna (>=4.3.0,<5.0.0)",
     "pathlib (>=1.0.1,<2.0.0)",
-    "datetime (>=5.5,<6.0)",
-    "joblib (>=1.5.0,<2.0.0)"
+    "ipykernel (>=6.29.5,<7.0.0)",
+    "notebook (>=7.4.2,<8.0.0)",
+    "shap (>=0.47.2,<0.48.0)"
 ]
 
 
@@ -34,6 +35,23 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"
-pre-commit = "^4.2.0"
-isort = "^6.0.1"
 
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.venv
+  | build
+  | dist
+  | data
+  | logs
+  | __pycache__
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 88
+skip = ["data", "logs", "__pycache__"]

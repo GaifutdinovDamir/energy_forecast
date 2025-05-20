@@ -42,4 +42,10 @@ catboost_info/
 # logs
 logs/
 
+# artifacts
+artifacts/
+
+# optuna_log
+optuna*
+
 # __init__.py for empty folders (optional, leave it in)

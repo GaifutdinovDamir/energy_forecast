@@ -11,11 +11,9 @@ def setup_logging(
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_file = os.path.join(log_dir, f"{task_name}_{timestamp}.log")
 
-    # Основной формат логов
     log_format = "%(asctime)s — %(levelname)s — %(message)s"
     date_format = "%Y-%m-%d %H:%M:%S"
 
-    # Настройка логгера
     logging.basicConfig(
         level=log_level,
         format=log_format,
